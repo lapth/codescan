@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Scan - Home</title>
+    <link rel='stylesheet' href='/stylesheets/w3.css'/>
+    <link rel='stylesheet' href='/stylesheets/fontawesome/css/all.css'/>
+</head>
+
+<body>
+    <div class="w3-display-middle">
+        <h2>Welcome: <%= name %> (<%= login %>)</h2>
+
+        <h3>Github query?</h3>
+        </br>
+        Sample: github+user:lapth
+        <form action="/search" method="POST">
+            <textarea id="query" name="query" cols="40" rows="10">github+user:lapth</textarea>
+            </br>
+            <button class="w3-button w3-green w3-round-large w3-xlarge">Search</button>
+        </form>
+    </div>
+</body>
+</html>
